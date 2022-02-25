@@ -19,6 +19,7 @@ body {
   background-color: $dark-blue;
   min-height: 100vh;
   font-family: "Manrope", sans-serif;
+  padding: 1em;
 }
 
 main {
@@ -28,8 +29,8 @@ main {
 }
 
 .advice {
-  max-width: 540px;
-  min-height: 30vh;
+  max-width: 33.75rem;
+  min-height: 20.75rem;
   background-color: $dark-grayish-blue;
   padding: 2rem;
   text-align: center;
@@ -60,6 +61,7 @@ main {
     }
   }
   &__dice {
+    cursor: pointer;
     background-color: $neon-green;
     border-radius: 50%;
     background-image: url(../images/icon-dice.svg);
@@ -72,8 +74,25 @@ main {
     bottom: 0;
     left: 50%;
     transform: translateY(50%) translateX(-50%);
+    transition: all 125ms ease;
     &:hover {
-      box-shadow: 0 0 20px 5px $neon-green;
+      box-shadow: 0 0 40px $neon-green;
+      transform: translateY(50%) translateX(-50%) scale(1.05) rotate(360deg);
+    }
+  }
+}
+
+@media screen and (max-width: 35.75rem) {
+  .advice {
+    max-width: 90vw;
+    &__divider {
+      margin-bottom: 2rem;
+      &--desktop {
+        display: none;
+      }
+      &--mobile {
+        display: block;
+      }
     }
   }
 }

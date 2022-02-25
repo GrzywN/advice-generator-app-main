@@ -1,0 +1,2 @@
+const diceButton=document.querySelector(".advice__dice"),heading=document.querySelector(".advice__heading"),quote=document.querySelector(".advice__quote");async function getData(){try{const e=await fetch("https://api.adviceslip.com/advice",{cache:"no-cache"}),t=await e.json();heading.innerText=`Advice # ${t.slip.id}`,quote.innerText=`"${t.slip.advice}"`}catch(e){console.log(e)}}window.addEventListener("load",getData),diceButton.addEventListener("click",getData);
+//# sourceMappingURL=index.6da9b496.js.map
