@@ -22,7 +22,7 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor](ht
 ### Links
 
 - Solution URL: [GitHub](https://github.com/GrzywN/advice-generator-app-main)
-- Live Site URL: [Netlify]()
+- Live Site URL: [Netlify](https://amazing-curran-03cd75.netlify.app/)
 
 ## My process
 
